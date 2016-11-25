@@ -169,8 +169,8 @@
 \contentsline {subsection}{\numberline {3.4.3}Parameter Learning for an Undirected Tree-Structured Graphical Model}{89}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}Structure Learning -- Trees}{91}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Structure Learning for an Undirected Tree-Structured Graphical Model: The Chow-Liu Algorithm}{91}{subsection.3.5.1}
-\contentsline {chapter}{\numberline {A}Notation Summary}{92}{appendix.A}
-\contentsline {chapter}{\numberline {B}Supplementary Information}{94}{appendix.B}
-\contentsline {section}{\numberline {B.1}External Resources}{94}{section.B.1}
-\contentsline {section}{\numberline {B.2}Hints from the Discussion Forum}{94}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}Law of Total Expectation as Matrices}{94}{subsection.B.2.1}
+\contentsline {chapter}{\numberline {A}Notation Summary}{94}{appendix.A}
+\contentsline {chapter}{\numberline {B}Supplementary Information}{96}{appendix.B}
+\contentsline {section}{\numberline {B.1}External Resources}{96}{section.B.1}
+\contentsline {section}{\numberline {B.2}Hints from the Discussion Forum}{96}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}Law of Total Expectation as Matrices}{96}{subsection.B.2.1}
