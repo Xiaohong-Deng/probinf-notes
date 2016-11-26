@@ -9,7 +9,7 @@ At this point we've covered parameter learning for undirected trees, where we as
 
 The idea is that we have random variables $X_1$ up through $X_k$. These you can think of as nodes in a undirected graphical model. But we don't know which edges should be in this graphical model. And restricting ourself to trees, the question is, which tree should we use? To help us answer this question, we're going to have access to training data. We see $n$ i.i.d. samples from this graphical model, where for each of the samples, of course, we see everything, $x_1^{(i)},\dots ,x_k^{(i)}$. So this is the $i$-th training data point and $i = 1 \dots n$. Just as a comment, the number of possible trees here is humongous, actually $k^{k-2}$. This from a result called Cayley's formula, which grows even faster than exponential, it's super exponential. Somehow, we're going to search this huge space of possible trees to select the best tree. It turns out, doing that can be done very quickly. To select the tree we're going to use maximum likelihood. We're going to pick the tree $T$ here. 
 
-{\centering$\displaystyle \widehat{T}=\arg\max_{T} \bigg\{\max_{\theta_T} \log \prod_{i=1}^n p_{x_1 \dots x_k}^{(x_1^{(i)},\dots ,x_k^{(i)}; T, \theta_T)} \bigg\}$ \par}
+{\centering$\displaystyle \widehat{T}=\arg\max_{T} \bigg\{\max_{\theta_T} \log \prod_{i=1}^n p_{x_1 \dots x_k} (x_1^{(i)},\dots ,x_k^{(i)}; T, \theta_T) \bigg\}$ \par}
 
 In this case, we know that there are $k$ nodes, but where are the edges? You can think of $T$ as just specifying which edges are present that result in a tree across $k$ nodes, with $k-1$ edges. So we're trying to find the best tree such that once we fix a tree, then we can do maximum likelihood for that specific tree $T$. 
 
@@ -17,7 +17,7 @@ To solve this optimization problem, it turns out there's a very clean algorithm.
 
 \begin{eqnarray*}
 \text{For specific tree } T: \\
-& & \max_{\theta_T} \log \prod_{i=1}^n p_{x_1 \dots x_k}^{(x_1^{(i)},\dots ,x_k^{(i)}; T, \theta_T)}  \\&=& \log \prod_{i=1}^n \bigg[ \widehat{p}(x_r^{(i)}) \prod_{j \ne r} \widehat{p}(x_r^{(i)} | x_{\pi(j)}^{(i)}) \bigg] \\
+& & \max_{\theta_T} \log \prod_{i=1}^n p_{x_1 \dots x_k} (x_1^{(i)},\dots ,x_k^{(i)}; T, \theta_T)  \\&=& \log \prod_{i=1}^n \bigg[ \widehat{p}(x_r^{(i)}) \prod_{j \ne r} \widehat{p}(x_r^{(i)} | x_{\pi(j)}^{(i)}) \bigg] \\
 &=& \sum_{i=1}^n \log \widehat{p}(x_r^{(i)}) + \sum_{j \ne r} \sum_{i=1}^n \log \widehat{p}(x_r^{(i)} | x_{\pi(j)}^{(i)}) \\
 \end{eqnarray*}
 
