@@ -169,8 +169,14 @@
 \contentsline {subsection}{\numberline {3.4.3}Parameter Learning for an Undirected Tree-Structured Graphical Model}{89}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}Structure Learning -- Trees}{91}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Structure Learning for an Undirected Tree-Structured Graphical Model: The Chow-Liu Algorithm}{91}{subsection.3.5.1}
-\contentsline {chapter}{\numberline {A}Notation Summary}{94}{appendix.A}
-\contentsline {chapter}{\numberline {B}Supplementary Information}{96}{appendix.B}
-\contentsline {section}{\numberline {B.1}External Resources}{96}{section.B.1}
-\contentsline {section}{\numberline {B.2}Hints from the Discussion Forum}{96}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}Law of Total Expectation as Matrices}{96}{subsection.B.2.1}
+\contentsline {subsection}{\numberline {3.5.2}Correctness and Running Time of the Chow-Liu Algorithm}{94}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Correctness of Kruskal's Algorithm}{94}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Running Time of the Chow-Liu Algorithm}{96}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Details on the Union-Find Data Structure}{97}{subsection.3.5.5}
+\contentsline {chapter}{\numberline {4}Epilogue}{101}{chapter.4}
+\contentsline {section}{\numberline {4.1}What's Next?}{101}{section.4.1}
+\contentsline {chapter}{\numberline {A}Notation Summary}{104}{appendix.A}
+\contentsline {chapter}{\numberline {B}Supplementary Information}{106}{appendix.B}
+\contentsline {section}{\numberline {B.1}External Resources}{106}{section.B.1}
+\contentsline {section}{\numberline {B.2}Hints from the Discussion Forum}{106}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}Law of Total Expectation as Matrices}{106}{subsection.B.2.1}
